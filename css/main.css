@@ -1,3 +1,479 @@
-/*
- * Estilos de tu proyecto
+/*En esta parte me creo un pequeño recordatorio de los elementos que usaré
+constantemente en la parte visual CSS de la web
+font-family: 'Montserrat', sans-serif;
+Botones, hover: `#FF00BF`
+ - Fondo de `footer`: `#333447`
+ - Título del formulario: `#352384`
+ - Texto del formulario: `#728099`
+ - Gradiente morado: `linear-gradient(#76278F, #2B1E66);
  */
+ /*Esta opción del asterisco corresponde a un selector universal que le da características
+ a la web en general*/
+* {
+  margin: 0 auto;/*Le digo por ejemplo que el margen será de valor 0, con lo cual se ajustará
+  a cualquier tamaño de pantalla*/
+  font-family: 'Montserrat', sans-serif;/*y esta es la fuente tipográfica que se usa en la web*/
+}
+
+body {
+  width: 100%;/*Aquí determino que el ancho de la página web será del 100%, ya que así
+  al ser un valor en porcentajes, siempre se adapttará al máximo ancho d ela resolción
+  de pantalla sin perder la forma ni orden de los elementos*/
+}
+/*Este corresponde a un selector de clases, y lo que hace es decirle
+  a la hoja de HTML: a todas las clases que al menos tengan el valor "mayus", hazle esto*/
+[class |= mayus] {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/*Esta es la imagen background de la seccion inicio*/
+#fondo {
+  background-image: url(../assets/images/hero.gif);
+  background-position: 0 -105px;
+  background-size: cover;
+  background-attachment: local;
+  height: 600px;
+  overflow: hidden;
+  z-index: 10;
+}
+/*Y este el logo de la web lyft*/
+#logo-bco {
+  background-image: url(../assets/images/logo-white.png);
+  background-size: cover;
+  width: 58px;
+  height: 42.5px;
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 80px;
+  z-index: 100;
+}
+/*Esta sección determina las cararcterísticas del header*/
+header {
+  position: absolute;
+  width: 100%;
+  height: 110px;
+  z-index: 1000;
+}
+
+header nav {
+  position: absolute;
+  margin-left: 55%;
+  z-index: 5;
+}
+
+header li {
+  width: 90px;
+  float: left;
+  list-style: none;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 110px;
+  padding: 0;
+}
+
+header a:hover {
+  color: #FF00BF;
+  cursor: pointer;
+}
+
+header nav .button {
+  border: 1px white solid;
+  border-radius: 5px;
+  padding: 10px 18px;
+}
+
+header nav .button:hover {
+  color: #fff;
+  background-color: #FF00BF;
+  cursor: pointer;
+}
+/*Esta sección determina las cararcterísticas de la sección inicio*/
+.inicio .turn {
+  width: 530px;
+  height: 380px;
+  background-color: #fff;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 58.05%;
+  z-index: 20;
+}
+
+.inicio .turn .log-in {
+  margin: 60px;
+  display: block;
+}
+
+.inicio .turn h1 {
+  color: #352384;
+  line-height: 35px;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.inicio .turn h5 {
+  color: #352384;
+  margin-bottom: 20px;
+}
+
+.inicio .turn .phone {
+  color: #728099;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #2B1E66;
+  line-height: 25px;
+  margin-bottom: 45px;
+  outline: 0;
+}
+
+.inicio .turn .become {
+  color: #fff;
+  text-decoration: none;
+  background-color: #FF00BF;
+  border-radius: 7px;
+  padding: 15px 20px;
+  font-size: 15px;
+  margin-bottom: 100px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.inicio .turn .become:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.inicio .turn .sign-up {
+  color: #728099;
+  text-decoration: underline;
+  margin-left: 17px;
+}
+
+.inicio .turn .sign-up:hover {
+  color: #76278F;
+  cursor: pointer;
+}
+
+.inicio .turn p {
+  color: #728099;
+  font-size: 9px;
+  line-height: 20px;
+  margin-top: 40px;
+}
+
+.inicio .turn p a {
+  color: #FF00BF;
+  text-decoration: none;
+}
+
+.inicio .turn p a:hover {
+  color: #76278F;
+  text-decoration: underline;
+}
+/*Esta sección determina las cararcterísticas de la sección "primera"*/
+.primera .descripcion {
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  position: absolute;
+  z-index: 200;
+}
+
+.primera .descripcion .texto {
+  width: 450px;
+  font-size: 15px;
+  margin-left: 11%;
+  float: left;
+  margin-top: -70px;
+}
+
+.primera .descripcion .texto h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  margin-top: 60px;
+}
+
+.primera .descripcion #celular {
+  background-image: url(../assets/images/phone.png);
+  background-size: cover;
+  width: 420px;
+  height: 460px;
+  position: absolute;
+  float: left;
+  margin-left: 53%;
+  margin-top: -40px;
+}
+
+.primera .degrade {
+  background: linear-gradient(#5E217A, #2B1E66);
+  height: 500px;
+  width: 99.95%;
+  margin-left: 0;
+  position: relative;
+}
+/*en esta sección además creo el efecto de degrade del fondo*/
+.primera #gradiente {
+  background: linear-gradient(#76278F, #2B1E66);
+  height: 500px;
+  width: 99.5%;
+  filter: blur(40px);
+  float: left;
+  position: relative;
+  top: -140px;
+  z-index: 1;
+}
+/*Esta sección determina las cararcterísticas de la sección "segunda"*/
+body .segunda {
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  position: relative;
+  color: #000;
+}
+
+.segunda .texto-video {
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 25px;
+  width: 320px;
+  font-size: 15px;
+  margin-left: 5%;
+  float: left;
+}
+
+.segunda div h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+/*En esta parte creo las características del video1*/
+.segunda iframe {
+	display: inline-block;
+	width: 830px;
+	height:450px;
+
+  margin-left: 52%;
+  z-index: 100;
+}
+
+.segunda #video1 {
+position: absolute;
+}
+/*Esta sección determina las cararcterísticas de la sección "tercera"*/
+body .tercera {
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  position: relative;
+  color: #000;
+}
+
+.tercera .texto-video {
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 25px;
+  width: 320px;
+  font-size: 15px;
+  margin-right: 5%;
+  float: right;
+}
+
+.tercera div h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+/*En esta parte creo las características del video2*/
+.tercera iframe {
+  position: absolute;
+	display: inline-block;
+	width: 830px;
+	height:450px;
+
+  margin-right: 0 auto;
+  z-index: 100;
+}
+
+.tercera #video2 {
+position: absolute;
+}
+/*Esta sección determina las cararcterísticas de la sección "cuarta"*/
+body .cuarta {
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  position: relative;
+  color: #000;
+}
+
+.cuarta .texto-video {
+  display: block;
+  font-size: 16px;
+  line-height: normal;
+  margin-top: 25px;
+  width: 320px;
+  font-size: 15px;
+  margin-left: 5%;
+  float: left;
+}
+
+.cuarta div h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+}
+/*En esta parte creo las características del video3*/
+.cuarta iframe {
+	display: inline-block;
+	width: 830px;
+	height:450px;
+
+  margin-left: 52%;
+  z-index: 100;
+}
+
+.cuarta #video3 {
+position: absolute;
+}
+/*Esta sección determina las cararcterísticas de la sección footer*/
+footer {
+  background-color: #333447;
+  width: 100%;
+  height: 490px;
+  color: #fff;
+  display: block;
+}
+
+footer .f-log-in {
+  margin-left: 7%;
+}
+
+footer .f-log-in, .f-partner, .f-learn {
+  float: left;
+  width: 150px;
+  margin-top: 60px;
+  margin-right: 100px;
+}
+
+footer .f-learn {
+  margin-right: none;
+}
+
+footer li {
+  list-style: none;
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+
+footer ul .mayus {
+  font-size: 18px;
+}
+
+footer ul .mayus a:hover {
+  color: #fff;
+  text-decoration: underline #FF00BF;
+}
+
+footer li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer li a:hover {
+  color: #FF00BF;
+  text-decoration: underline;
+}
+
+footer .download {
+  width: 150px;
+  height: 230px;
+  margin-top: 70px;
+  margin-left: 40px;
+  float: left;
+}
+
+footer .download a {
+  cursor: pointer;
+}
+
+#app-store {
+  background-image: url(../assets/images/apple-store.svg);
+  background-size: cover;
+  width: 125px;
+  height: 37px;
+  float: left;
+  z-index: 100;
+}
+
+#g-play {
+  background-image: url(../assets/images/google-play.png);
+  background-size: cover;
+  width: 125px;
+  height: 37px;
+  margin-top: 35px;
+  float: left;
+  z-index: 100;
+}
+
+#microsoft {
+  background-image: url(../assets/images/microsoft.png);
+  background-size: cover;
+  width: 125px;
+  height: 45px;
+  margin-top: 35px;
+  float: left;
+  z-index: 100;
+}
+
+footer .redes {
+  float: left;
+  width: 330px;
+  margin-left: 38%;
+  margin-top: 10px;
+}
+
+footer .redes .icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  float: left;
+  margin-right: 60px;
+}
+
+footer hr {
+  border: 0.7px solid;
+  width: 700px;
+  float: left;
+  margin-top: 25px;
+  margin-left: 22%;
+}
+
+footer p {
+  float: left;
+  margin-top: 40px;
+  margin-left: 42%;
+  font-size: 15px;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+footer p a:hover {
+  color: #FF00BF;
+  text-decoration: underline;
+  margin-left: 12px;
+  cursor: pointer;
+}

@@ -1,92 +1,33 @@
 # Lyft
+## La Aplicación
+Lyft es una empresa de redes de transporte con sede en San Francisco, California. Desarrolla, comercializa y opera la aplicación móvil de transporte de automóviles Lyft. Lanzado en junio de 2012, Lyft opera en aproximadamente 300 ciudades de EE. UU., incluidas Nueva York, San Francisco y Los Ángeles y ofrece 18,7 millones de viajes al mes.
 
-* **Track:** _Common Core_
-* **Curso:** _Creando tu primer sitio web interactivo_
-* **Unidad:** _Maquetado web con HTML & CSS_
 
-***
+## La Página Web
+Se procedió a crear basada en la estructura web HTML5, cuyo resultado final es el de la imagen:
 
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
+####La Hoja HTML (HyperText Markup Language)
 
-## Flujo de trabajo
+Esta consta de la estructura básica de una hoja HTML, como son el `Head`y el `Body`. 
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+`HEAD` Consta de un *title* que es la etiqueta que se ve en la parte superior de  la web (pestaña de la ventana). En este caso se le ha llamado **Lyft**.
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/lyft.git
-   ```
+`BODY` Este cuenta con toda la parte visual de la web, con la cual además se puede interactuar mediante links y botones gracias a la hoja de estilos vinculada (main.css)
 
-## Objetivo
+Además, este cuenta con secciones que hacen más fácil y comprensible el acceso a su estructura y, por ende, a la información. Estas secciones son:
 
-El reto consiste en replicar el sitio de **Lyft**, este será el resultado
-a lograr:
+* **Header**: Aquí se presenta la bara de navegación que es aquella donde puedo acceder en primera instancia a las opciones básicas de la web .
+* **Sección**
 
-![Lyft Website](docs/fullpage.png)
 
-## Consideraciones
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
-  estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
+####La Hoja CSS (Cascading Style Sheet)
+En esta se presenta todas las características editables de la página web con sus respectivos valores. Es aquí donde se puede redefinir el estilo, en caso de desearse hacer cambios en la presentación visual de la web.
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
-  estilos necesarios para tu proyecto:
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
-  encontrarás todas las imágenes necesarias para completar tu proyecto.
+******
+Este web fue creada por **Natalia Campos Godoy**, y su última modificación fue realizada el día 30 de octubre del 2017 a las 02.00 hrs.
+######**Versión** `0.0.1`
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
-  repositorio.
 
-* Esta web utiliza la tipografía `Montserrat`.
-
-* La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
-  para ganar tiempo, puedes usar los siguientes:
-
-  - Botones, hover: `#FF00BF`
-  - Fondo de `footer`: `#333447`
-  - Título del formulario: `#352384`
-  - Texto del formulario: `#728099`
-  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
-
-* Para el footer, deberás tomar en cuenta que tiene un hover y se ve como en la
-  siguiente imagen:
-
-  ![Lyft - Footer](docs/footer.gif)
-
-  Además, los íconos deberás obtenerlo de `Icomoon`.
-
-* Para este reto, encontrarás ciertas cosas que probablemente aun no has visto
-  en clase (formularios, videos de Youtube). No te preocupes, estamos seguros
-  que los afrontarás con éxito, de igual forma aquí unos tips:
-
-  - Estos son los videos de Youtube:
-    * https://www.youtube.com/watch?v=fLSmUWOYpKw
-    * https://www.youtube.com/watch?v=V7j8Aqxmbs8
-    * https://www.youtube.com/watch?v=xj2VWLV0xCU
-  - Para agregar los videos, averigua sobre la etiqueta `iframe`.
-  - Para el formulario, revisa las etiquetas como `form` e `input`.
-
-* Puedes ver el [sitio original](https://www.lyft.com/), sin embargo, su diseño
-  ya ha cambiado en ciertas partes, así que tu fuente de verdad es la imagen que
-  muestra el objetivo de este reto.
-
-  > Nota: El sitio original tiene ciertos efectos y funcionalidades que
-están fuera del alcance de este reto. Enfócate en obtener la maquetación
-lo más parecido posible, usando lo aprendido en clase ;)
-
-## A tener en cuenta
-
-Este reto será evaluado sobre lo siguiente:
-
-* Pixel perfect (replicar el diseño con exactitud)
-* Estructura de carpetas y archivos
-* Nombramiento de clases, id, etc
-* Indentación
-* Archivo `README.md` actualizado y correctamente redactado
-* Uso de comentarios para hacer tu código más legible
